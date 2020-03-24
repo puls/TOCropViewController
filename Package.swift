@@ -23,15 +23,13 @@ let package = Package(
             name: "TOCropViewController",
             path: "Objective-C/TOCropViewController",
             sources: [
-                ".",
+                "TOCropViewController.m",
                 "Categories",
                 "Constants",
                 "Models",
                 "Resources",
-                "Supporting",
                 "Views",
-            ],
-            publicHeadersPath: "Include"
+            ]
         ),
         .target(
             name: "CropViewController",
@@ -40,7 +38,7 @@ let package = Package(
             ],
             path: "Swift/CropViewController",
             sources: [
-                "."
+                "CropViewController.swift"
             ]
         )
     ]
